@@ -67,7 +67,7 @@ st.markdown("""
 @st.cache_data(ttl=3600)  # Cache data for 1 hour
 def load_data():
     try:
-        terminals = pd.read_csv("Terminals_Sampled_24MB.csv")
+        terminals = pd.read_csv("Terminals_Filtered_24MB.csv")
         terminals_weekly = pd.read_csv("TerminalsWeekly.2025-02-19T09-55.csv")
         floating_storage = pd.read_csv("FloatingStorageVessels.2025-02-19T03-30.csv")
         
